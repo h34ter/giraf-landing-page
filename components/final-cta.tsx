@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/site-config"
 import { trackEvent } from "@/lib/analytics"
 import { useState } from "react"
 import { ApplyModal } from "./apply-modal"
+import Image from "next/image"
 
 const ArrowRightIcon = () => (
   <svg
@@ -16,8 +17,8 @@ const ArrowRightIcon = () => (
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <line x1="5" y1="12" x2="19" y2="12"></line>
-    <polyline points="12 5 19 12 12 19"></polyline>
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
   </svg>
 )
 
@@ -36,6 +37,20 @@ export function FinalCTA() {
 
   return (
     <>
+      <section className="py-20 md:py-32 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto mb-16">
+            <div className="relative h-[300px] md:h-[500px] rounded-lg overflow-hidden">
+              <Image
+                src="/crowd-demoday.jpg"
+                alt="GIRAF Demo Day Community"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-20 md:py-32" id="apply">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center bg-primary/5 rounded-2xl p-12 md:p-16 border-2 border-primary/20">
