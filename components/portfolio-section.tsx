@@ -15,6 +15,14 @@ export function PortfolioSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Portfolio</h2>
+          <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden mb-8">
+            <Image
+              src="/Demoday-1-group-wave-4-press.jpg"
+              alt="GIRAF Portfolio Companies Demo Day"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {siteConfig.portfolio.map((company, index) => (
