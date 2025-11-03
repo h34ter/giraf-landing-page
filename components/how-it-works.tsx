@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/site-config"
+import Image from "next/image"
 
 export function HowItWorks() {
   return (
@@ -6,6 +7,14 @@ export function HowItWorks() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">How it works</h2>
+          <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden mt-8 mb-8">
+            <Image
+              src="/01_startups_192.jpg"
+              alt="GIRAF Startup Community"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
